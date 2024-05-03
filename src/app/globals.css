@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .container {
+    @apply px-4 mx-auto max-w-7xl;
+  }
+
+  nav .active {
+    @apply text-[#eb4a36] font-medium;
+  }
+
+  select {
+    @apply accent-red-600;
+  }
+
+  .card {
+    @apply max-w-[450px];
+  }
+
+  .card img {
+    @apply object-cover w-full;
+  }
+
+  .step h3 {
+    @apply text-[#eb4a36] uppercase font-light text-lg tracking-wider my-4;
+  }
+
+  .step p {
+    @apply mb-6 ml-8 leading-8 text-gray-500;
+  }
+
+  .login-form {
+    @apply flex flex-col my-6;
+  }
+
+  .login-form div {
+    @apply flex flex-col gap-2 my-2;
+  }
+
+  .login-form input {
+    @apply px-4 py-2 border rounded-md border-black/20;
+  }
+
+  .social-icon {
+    @apply transition-all cursor-pointer brightness-90 hover:brightness-105 hover:drop-shadow-xl;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .backdrop-dark::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .backdrop-light::backdrop {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+}
